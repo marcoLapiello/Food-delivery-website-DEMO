@@ -1,0 +1,34 @@
+.orderConfirmedWrapper {
+  min-height: 100vh;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.orderConfirmedWrapper h1 {
+  margin: 20px;
+}
+
+.orderConfirmedWrapper h3 {
+  margin: 20px;
+}
+
+.backToShop {
+  background-image: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.723),
+    #ff7700,
+    #ff8000
+  );
+  box-shadow: 1px 1px 5px 1px black;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+
+  padding: 2% 5%;
+  transition: 0.1s ease-in;
+}
+
+.backToShop:hover {
+  cursor: pointer;
+  font-size: 22px;
+}

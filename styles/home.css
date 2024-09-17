@@ -1,0 +1,346 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    135deg,
+    #ff8000,
+    #ff7700,
+    rgba(69, 41, 7, 0.956),
+    rgba(0, 0, 0, 0.956),
+    black
+  );
+  z-index: -4;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.styleHomeWrapper {
+  height: 100%;
+  width: 90%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mainLogo {
+  height: 130px;
+  position: absolute;
+  top: 7%;
+  left: 0;
+}
+
+.slogan {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  padding-right: 6%;
+  padding-bottom: 4%;
+  border-bottom-right-radius: 180px;
+  font-size: 24px;
+  color: white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.decoImg {
+  height: 1200px;
+  z-index: -3;
+}
+
+.addressDiv {
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.addressDiv::after {
+  content: "";
+  height: 110%;
+  width: 101%;
+  border-radius: 10px;
+
+  position: absolute;
+  background-image: linear-gradient(135deg, black, #ff8000);
+  z-index: -1;
+}
+
+.addressInput {
+  width: 70%;
+  height: 100%;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.addressDiv button {
+  width: 30%;
+  height: 100%;
+  border: none;
+  background-color: black;
+  color: #ff8000;
+  font-weight: bold;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: all 0.3s;
+}
+
+.addressDiv button:hover {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.styleRestaurantCard {
+  height: 350px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  position: absolute;
+  right: 0%;
+  top: 20%;
+  /* transition-property: all;
+  transition-duration: .5s; */
+  transition: all 0.5s;
+}
+
+.styleRestaurantCard::after {
+  content: "";
+  position: absolute;
+  height: 103%;
+  width: 103%;
+
+  border-radius: 8px;
+  background-image: linear-gradient(135deg, black, #ff8000);
+  z-index: -1;
+}
+
+.styleRestaurantCard:hover {
+  cursor: pointer;
+  scale: 1.1;
+  box-shadow: -40px -20px 100px rgba(0, 0, 0, 0.696), 40px 20px 100px #ff8000b0;
+}
+
+.cardImg {
+  height: 200px;
+  width: 250px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-image: url("../assets/img/restMexico.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cardLogoDiv {
+  height: 80px;
+  width: 80px;
+  background-image: url("../assets/img/logoMex.png");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid black;
+  border-radius: 40px;
+  position: absolute;
+  top: -25%;
+  left: 34%;
+}
+
+.styleRestaurantCard2 {
+  height: 350px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  position: absolute;
+  right: 25%;
+  top: 40%;
+  /* transition-property: all;
+    transition-duration: .5s; */
+  transition: all 0.5s;
+}
+
+.styleRestaurantCard2::after {
+  content: "";
+  position: absolute;
+  height: 103%;
+  width: 103%;
+
+  border-radius: 8px;
+  background-image: linear-gradient(135deg, black, #ff8000);
+  z-index: -1;
+}
+
+.styleRestaurantCard2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  box-shadow: -40px -20px 100px rgba(0, 0, 0, 0.696), 40px 20px 100px #ff8000b0;
+}
+
+.cardImg2 {
+  height: 200px;
+  width: 250px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-image: url("../assets/img/restJap.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cardLogoDiv2 {
+  height: 80px;
+  width: 80px;
+  background-image: url("../assets/img/logoJap.png");
+  background-size: 120px;
+  background-position: center;
+  border: 2px solid black;
+  border-radius: 40px;
+  position: absolute;
+  top: -25%;
+  left: 34%;
+}
+
+.styleRestaurantCard3 {
+  height: 350px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  position: absolute;
+  right: 50%;
+  top: 57%;
+
+  transition: all 0.5s;
+}
+
+.styleRestaurantCard3::after {
+  content: "";
+  position: absolute;
+  height: 103%;
+  width: 103%;
+
+  border-radius: 8px;
+  background-image: linear-gradient(135deg, black, #ff8000);
+  z-index: -1;
+}
+
+.styleRestaurantCard3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  box-shadow: -40px -20px 100px rgba(0, 0, 0, 0.696), 40px 20px 100px #ff8000b0;
+}
+
+.cardImg3 {
+  height: 200px;
+  width: 250px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-image: url("../assets/img/restDe.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cardLogoDiv3 {
+  height: 80px;
+  width: 80px;
+  background-image: url("../assets/img/logoDe.png");
+  background-size: cover;
+  background-position: center;
+  border: 2px solid black;
+  border-radius: 40px;
+  position: absolute;
+  top: -25%;
+  left: 34%;
+}
+
+.styleRestaurantCard4 {
+  height: 350px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  position: absolute;
+  right: 75%;
+  top: 63%;
+
+  transition: all 0.5s;
+}
+
+.styleRestaurantCard4::after {
+  content: "";
+  position: absolute;
+  height: 103%;
+  width: 103%;
+
+  border-radius: 8px;
+  background-image: linear-gradient(135deg, black, #ff8000);
+  z-index: -1;
+}
+
+.styleRestaurantCard4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  box-shadow: -40px -20px 80px rgba(0, 0, 0, 0.696), 40px 20px 80px #ff8000b0;
+}
+
+.cardImg4 {
+  height: 200px;
+  width: 250px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-image: url("../assets/img/margherita.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cardLogoDiv4 {
+  height: 80px;
+  width: 80px;
+  background-image: url("../assets/img/logoPizzeria.png");
+  background-size: 120px;
+  background-position: center;
+  border: 2px solid black;
+  border-radius: 40px;
+  position: absolute;
+  top: -25%;
+  left: 34%;
+}
+
+.cardDescription {
+  background-color: white;
+  padding: 4%;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  text-align: center;
+}
+
+.cardDescription span {
+  font-size: 16px;
+}

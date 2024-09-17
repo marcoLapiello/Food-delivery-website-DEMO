@@ -1,0 +1,164 @@
+.styleBasket {
+  /* height: 100vh; */
+  width: 300px;
+  padding: 1%;
+  box-shadow: 8px 0px 15px black;
+  clip-path: inset(0px 0px 0px -15px);
+}
+
+.styleBasket button {
+  border-radius: 0px;
+  border: none;
+  color: #ff8000;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.styleBasket button:hover {
+  cursor: pointer;
+  scale: 1.3;
+}
+
+.styleBasketContent {
+  height: 700px;
+  width: 100%;
+  position: sticky;
+  top: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.orderBtnDiv {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.orderBtnDiv a {
+  padding: 2% 5%;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.723),
+    #ff7700,
+    #ff8000
+  );
+  font-size: 18px;
+  box-shadow: 1px 1px 5px 1px black;
+  transition: 0.3s;
+}
+
+.orderBtnDiv a:hover {
+  cursor: pointer;
+  padding: 2% 10%;
+}
+
+.cartBtnDiv {
+  display: none;
+}
+
+.cartBtn {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  height: 32px;
+}
+
+.cartBtnDiv:hover {
+  cursor: pointer;
+  scale: 1.2;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  .styleContentWrapper {
+    margin-top: 20px;
+  }
+
+  .styleBasket {
+    /* height: 100vh; */
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    display: none;
+    margin-top: 100px;
+  }
+
+  .styleBasketContent {
+    height: auto;
+    width: 80%;
+    /* padding: 5% 2%; */
+  }
+
+  .cartBtnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cartQuantity {
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+    font-weight: bold;
+
+    width: 20px;
+    height: auto;
+    border-radius: 20px;
+  }
+}
+
+.cartDisplay {
+  display: flex;
+}
+
+.styleBasketContent h3 {
+  text-align: center;
+}
+
+.basketSeparator {
+  width: 100%;
+  height: 2px;
+  background-color: #e8e6e3;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.styleQuantityPrice {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0%;
+  font-size: 14px;
+}
+
+.styleQuantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.basketSum {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0%;
+  font-size: 16px;
+}
+
+.basketSumTotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0%;
+  font-size: 16px;
+  font-weight: bold;
+}

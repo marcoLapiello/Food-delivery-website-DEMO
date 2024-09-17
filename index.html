@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BestellApp - Restaurant page</title>
+    <link rel="icon" href="./assets/Favicon/favicon.ico" type="image/x-icon" />
+    <script src="./scripts/db.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/template.js"></script>
+    <link rel="stylesheet" href="./styles/basket.css" />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/mainContent.css" />
+    <link rel="stylesheet" href="./styles/orderConfirmed.css" />
+  </head>
+  <body onload="init()">
+    <header>
+      <div class="headerContent">
+        <img src="./assets/Logo/Logo.png" alt="" />
+        <div id="cartBtnDiv" class="cartBtnDiv" onclick="showCart()">
+          <img
+          src="assets/icons/shopping-cart.254x256.png"
+          class="cartBtn"
+          
+        />
+        <span id="cartCurrentQuantity" class="cartQuantity"></span>
+        </div>
+        
+      </div>
+    </header>
+
+    <section id="contentWrapper" class="styleContentWrapper">
+      <div id="mainContent" class="styleMainContent">
+        <div id="heroDiv" class="styleHeroDiv">
+          <div class="anbieterLogoDiv"></div>
+        </div>
+        <div class="heroDescription">
+          <h2>Pizzeria <br>Hot and Delicious</h2>
+          <span>Bewertung (4,5 von 5 Sternen)</span>
+        </div>
+
+        <div id="foodTypeSelector" class="styleFoodTypeSelector">
+          <img src="./assets/icons/orangeArrow.png" alt="" />
+          <span onclick="renderMainDishes()">Hauptgerichte</span>
+          <span onclick="renderSideDishes()">Beilage</span>
+        </div>
+
+        <div id="foodContent" class="styleFoodContent"></div>
+      </div>
+
+      <div id="basket" class="styleBasket">
+        <div id="basketContent" class="styleBasketContent">
+          <h3>Warenkorb</h3>
+          <div class="basketSeparator"></div>
+
+          <div id="cartFoodPlace"></div>
+
+          <div class="basketSeparator"></div>
+
+          <div>
+            <div class="basketSum">
+              <span>Zwischensumme</span>
+              <span id="subTotal">0,00€</span>
+            </div>
+            <div class="basketSum">
+              <span>Lieferkosten</span>
+              <span>5,00€</span>
+            </div>
+            <div class="basketSumTotal">
+              <span>Gesamt</span>
+              <span id="total">0,00€</span>
+            </div>
+          </div>
+          <div class="orderBtnDiv">
+            <a href="" class="" onclick="order(event)"
+              >Bestellen</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      No real Website - Copyright Marco Lapiello 2024 - No real Website
+    </footer>
+  </body>
+</html>
